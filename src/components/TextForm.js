@@ -25,7 +25,7 @@ function TextArea(props) {
     <div>
       <h2>{props.heading}</h2>
       <div className="mb-3 ">
-        <textarea className="form-control " value={text} onChange= {handleOnChange} id="exampleFormControlTextarea1" rows="8"></textarea>
+        <textarea className="form-control " value={text} onChange={handleOnChange} id="exampleFormControlTextarea1" rows="8" placeholder="Enter your text"></textarea>
       </div>
       <button className='btn btn-primary mx-1' onClick={handleUpClick}>Convert to Uppercase Letters</button>
       <button className='btn btn-primary mx-1' onClick={handleLoClick}>Convert to Lowercase Letters</button>
