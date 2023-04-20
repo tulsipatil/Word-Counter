@@ -19,13 +19,13 @@ function TextArea(props) {
   const clearText = () =>{
     setText("");
   }
-  const [text, setText] = useState("Enter text here");
+  const [text, setText] = useState("");
   return (
     <>
     <div>
       <h2>{props.heading}</h2>
       <div className="mb-3 ">
-        <textarea className="form-control " value={text} onChange= {handleOnChange} id="exampleFormControlTextarea1" rows="8"></textarea>
+        <textarea className="form-control " value={text} onChange= {handleOnChange} id="exampleFormControlTextarea1" rows="8" placeholder="Enter text here"></textarea>
       </div>
       <button className='btn btn-primary mx-1' onClick={handleUpClick}>Convert to Uppercase Letters</button>
       <button className='btn btn-primary mx-1' onClick={handleLoClick}>Convert to Lowercase Letters</button>
