@@ -33,7 +33,7 @@ function TextArea(props) {
     </div>
     <div className='contanier my-3'>
       <h3>Your text Summary</h3>
-      <p>{text.split(" ").length} words and {text.length} characters</p>
+      <p>{text.split(" ").length-1} words and {text.length} characters</p>
       <p>{0.008*text.split(" ").length.toFixed(0.1)} Minutes read</p>
       <h3>Preview</h3>
       <p className='text-secondary'>{text}</p>
